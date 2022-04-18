@@ -175,8 +175,9 @@ p {
     margin: 16px;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 690px) {
     body {
         height: auto;
+        padding: 16px;
     }
 }
