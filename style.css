@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    background-color: var(--main-bg);
+    font-size: 18px;
+}
+
+.card{
+    background-color: var(--card-bg);
+    width: 350px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card > .main-img{
+    background: url('./assets/image-equilibrium.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.hovered::before{
+    content: '';
+    position: absolute;
+    background-image: url('./assets/icon-view.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(178, 100%, 50%, 0.7);
+    z-index: 10;
+}
+
+.title{
+    color: var(--white);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.title:hover{
+    color: var(--cyan);
+}
+
+.excerpt{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.value-time{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.value{
+    display: flex;
+    color: var(--cyan);
+    align-items: center;
+    gap: 8px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid var(--line);
+}
+
+.author{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+    font-weight: 300;
+}
+
+.author > img{
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.info{
+    color: var(--soft-blue);
+}
+
+.name{
+    color: var(--white);
+    cursor: pointer;
+}
+
+.name:hover{
+    color: var(--cyan);
+}
+
+p{
+    margin: 0;
+}
+
