@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     margin: 0;
     background-color: var(--main-bg);
     font-size: 18px;
@@ -30,6 +30,7 @@ body {
 .card {
     background-color: var(--card-bg);
     width: 350px;
+    /* height: 525px; */
     padding: 25px;
     border-radius: 15px;
     box-shadow: 0 0 50px 3px rgba(0, 0, 0, 0.5);
@@ -171,7 +172,6 @@ p {
 }
 
 .attribution{
-    position: absolute;
-    bottom: 20px;
     color:hsl(0, 0%, 100%);
+    margin: 16px;
 }
