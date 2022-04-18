@@ -154,6 +154,11 @@ p {
     margin: 0;
 }
 
+.attribution{
+    color:hsl(0, 0%, 100%);
+    margin: 50px 16px;
+}
+
 .animated-bg {
     background-image: linear-gradient(to right, var(--line) 0%, var(--soft-blue) 10%, var(--line) 100%);
     background-size: 200% 100%;
@@ -170,10 +175,6 @@ p {
     }
 }
 
-.attribution{
-    color:hsl(0, 0%, 100%);
-    margin: 16px;
-}
 
 @media (max-height: 690px) {
     body {
@@ -183,6 +184,10 @@ p {
 
     .card{
         padding: 15px;
+    }
+
+    .attribution{
+        margin-top: 20px;
     }
 }
 
