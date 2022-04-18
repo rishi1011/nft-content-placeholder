@@ -169,3 +169,9 @@ p {
         background-position: -150% 0;
     }
 }
+
+.attribution{
+    position: absolute;
+    bottom: 20px;
+    color:hsl(0, 0%, 100%);
+}
