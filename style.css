@@ -180,4 +180,8 @@ p {
         height: auto;
         padding: 16px;
     }
+
+    .card{
+        padding: 15px;
+    }
 }
